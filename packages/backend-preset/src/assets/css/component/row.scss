@@ -1,0 +1,30 @@
+/**
+ * row
+ * @author  Yee
+ * @date    2020/8/28
+ * @desc
+ */
+@mixin row-50 {
+  padding: 0 10px;
+  height: 50px;
+  background-color: white;
+  @apply flex items-center;
+}
+
+@mixin row-36-bg {
+  padding: 0 20px 0 30px;
+  height: 36px;
+  color: #282828;
+  background-color: #f2f2f2;
+  @apply flex items-center;
+
+  .title {
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
+
+@mixin row-in-line {
+  line-height: 18px;
+  display: inline-block;
+}
