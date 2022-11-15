@@ -11,3 +11,4 @@
 | react-preset         | react16,webpack    |           |     |
 | uni-preset           | uni3,vue3,vite3,ts | 可用于多端     |     |
 | vue-storybook-preset | vue2               | 可用于UI组件设计 |     |
+| mobile-web-preset | vue3,vant3,webpack | 可用于移动端前台  |     |
