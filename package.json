@@ -1,0 +1,22 @@
+{
+  "name": "simple-preset-template",
+  "packageManager": "pnpm",
+  "version": "1.0.0",
+  "description": "模版",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yee1014/simple-preset-template.git"
+  },
+  "keywords": [
+    "preset",
+    "template"
+  ],
+  "author": "yee",
+  "bugs": {
+    "url": "https://github.com/Yee1014/simple-preset-template/issues"
+  },
+  "homepage": "https://github.com/Yee1014/simple-preset-template#readme"
+}
