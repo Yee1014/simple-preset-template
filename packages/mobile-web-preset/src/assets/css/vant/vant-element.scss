@@ -1,0 +1,198 @@
+/**
+ * vant-element
+ * @author  Yee
+ * @date    2021/5/8
+ * @desc    vant组件样式覆盖
+ */
+.van-field {
+  padding: 20px 32px;
+
+  &.van-dark {
+    .van-field__label {
+      color: var(--color-gray-9);
+    }
+  }
+
+  &.van-light {
+    .van-field__label {
+      color: var(--color-gray-5);
+    }
+  }
+
+  &.bs-no-border-bottom {
+    &:after {
+      display: none !important;
+    }
+  }
+
+  &.bs-van-no-label {
+    padding: 52px 0 18px 0;
+
+    .van-field__body {
+      .van-field__control {
+        font-size: var(--font-size-lg);
+      }
+    }
+
+    &.van-cell {
+      &:after {
+        left: 0;
+        right: 0;
+        display: block !important;
+      }
+    }
+  }
+
+  &.van-cell {
+    line-height: 56px;
+  }
+
+  &.van-cell--required {
+    padding-right: 32px;
+    padding-left: 32px;
+
+    .van-field__label {
+      //width: calc(7em - 30px);
+
+      &:before {
+        //top: 22px;
+        padding-right: 4px;
+        left: 30px;
+        color: var(--color-red);
+        font-size: var(--font-size);
+        content: '*';
+        //transform: translateY(-50%);
+      }
+    }
+
+    &:before {
+      display: none;
+    }
+  }
+
+  .van-field__label {
+    margin-right: 0;
+    width: 200px;
+    color: var(--color-gray-9);
+    font-size: var(--font-size);
+    line-height: 56px;
+  }
+
+  .van-field__body {
+    min-height: 56px;
+    line-height: 56px;
+
+    .van-field__control {
+      font-size: var(--font-size);
+    }
+
+    .van-field__right-icon {
+      line-height: 56px;
+    }
+  }
+
+  .van-field__error-message {
+    font-size: var(--font-size-small);
+    color: var(--color-red);
+  }
+}
+
+.van-cell {
+  padding: 20px 32px;
+
+  &.b-b {
+    &:after {
+      display: block !important;
+    }
+  }
+
+  &:after {
+    left: 32px;
+    right: 32px;
+    border-bottom-color: var(--color-border);
+  }
+
+  &:last-child:after {
+    display: block;
+  }
+}
+
+.van-list {
+  .van-list__finished-text {
+    font-size: var(--font-size-small);
+  }
+
+  .van-list__loading {
+    .van-loading__text {
+      font-size: var(--font-size-small);
+    }
+  }
+}
+
+.van-empty {
+  .van-empty__description {
+    font-size: var(--font-size-small);
+    color: var(--color-gray-3);
+  }
+}
+
+.van-radio-group {
+  margin-bottom: -10px;
+  .van-radio {
+    margin-bottom: 10px;
+  }
+  .van-radio-group--horizontal {
+  }
+  .van-radio--horizontal {
+    margin-right: 16px;
+  }
+}
+
+.van-checkbox {
+  &.van-checkbox--horizontal {
+    margin-right: 30px;
+  }
+  margin-bottom: 20px;
+  .van-checkbox__icon {
+    font-size: var(--font-size);
+  }
+  .van-checkbox__label {
+    font-size: var(--font-size);
+    color: var(--color-black);
+    line-height: 30px;
+  }
+}
+
+// 自定义模仿vant
+.van-select-input {
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  .van-text {
+    width: 100%;
+    box-sizing: border-box;
+    flex: 1;
+    color: var(--color-gray-3);
+    font-size: var(--font-size);
+    word-break: break-all;
+
+    &.is__value {
+      color: var(--color-black);
+    }
+    &.disabled {
+      padding: 0 32px;
+      flex: 0 0 auto;
+      background: var(--color-gray);
+      border-radius: 8px;
+    }
+  }
+}
+
+.van-picker {
+  .van-picker__columns {
+    .van-picker-column {
+      font-size: 24px;
+    }
+  }
+}

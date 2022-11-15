@@ -1,0 +1,218 @@
+/**
+ * common
+ * @author  Yee
+ * @date    2021/5/13
+ * @desc    公共样式 组件化
+ */
+
+// 适合van-field中使用， 和van-select-input不同
+.bs-select-text {
+  font-size: var(--font-size);
+  color: var(--color-gray-3);
+  word-break: break-all;
+
+  &.bs-placeholder {
+  }
+
+  &.bs-text-value {
+    color: var(--color-black);
+  }
+
+  &.textarea-text {
+    padding-top: 6px;
+    line-height: 42px;
+  }
+}
+
+.bs-select-arrow {
+  font-size: 24px;
+  color: var(--color-gray-3);
+}
+
+.bs-radio-button {
+  padding: 0 12px;
+  //min-width: 136px;
+  height: 56px;
+  line-height: 56px;
+  border-radius: 28px;
+  border: 2px solid var(--color-gray-8);
+  box-sizing: border-box;
+  font-size: 26px;
+  font-weight: 400;
+  justify-content: center;
+
+  .van-radio__label {
+    margin-left: 0;
+    color: var(--color-gray-8);
+  }
+
+  &.active {
+    .van-radio__label {
+      color: var(--color-blue-1);
+      font-weight: bold;
+    }
+
+    border-color: var(--color-blue-1);
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.bs-sheet-item {
+  position: relative;
+  padding: 42px 32px;
+  margin-bottom: 20px;
+  background: var(--bgcolor-app);
+  box-sizing: border-box;
+  display: flex;
+
+  .sheet-radio {
+    margin-right: 27px;
+    padding-top: 3px;
+    align-self: flex-start;
+
+    .van-radio__icon {
+      font-size: var(--font-size-bigger);
+    }
+
+    .van-checkbox__icon {
+      font-size: var(--font-size-bigger);
+
+      .van-icon {
+        border-radius: 4px;
+        overflow: hidden;
+      }
+    }
+  }
+
+  .sheet-info {
+    width: 100%;
+    font-size: var(--font-size-small);
+    align-self: flex-start;
+
+    .tag {
+      width: 44px;
+      height: 44px;
+      line-height: normal;
+      font-weight: bold;
+      //text-align: center;
+      color: var(--color-white);
+      background: var(--color-orange);
+      border-radius: 50%;
+      font-size: 24px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &.square {
+        background: var(--color-blue-1);
+        border-radius: 8px;
+      }
+      &.blue {
+        background: var(--color-purple);
+        font-weight: 600;
+      }
+    }
+
+    .row-title {
+      margin-top: 0 !important;
+      margin-bottom: 30px;
+      align-items: flex-start;
+      line-height: 44px;
+
+      .label {
+        padding: 0 10px;
+      }
+
+      .content {
+        flex: 1;
+      }
+
+      .detail-arrow {
+        color: var(--color-blue);
+        font-size: 24px;
+        line-height: 44px;
+      }
+    }
+
+    .sheet-row {
+      margin-top: 12px;
+      display: flex;
+
+      &.item-top {
+        align-items: flex-start;
+      }
+
+      .label {
+        color: var(--color-gray-9);
+
+        &.shadow {
+          margin: 0 12px;
+          padding: 0 10px;
+          height: 44px;
+          background: var(--color-gray);
+          border-radius: 8px;
+          font-size: 24px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        &.word4 {
+          min-width: 150px;
+          flex-basis: 150px;
+        }
+
+        &.word5 {
+          min-width: 180px;
+          flex-basis: 180px;
+        }
+
+        &.word6 {
+          min-width: 210px;
+          flex-basis: 210px;
+        }
+      }
+
+      .content {
+        color: var(--color-black);
+        word-break: break-word;
+
+        &.weight {
+          font-size: var(--font-size);
+          font-weight: bold;
+          color: var(--color-black);
+        }
+
+        .address {
+          font-size: var(--font-size-small);
+          color: var(--color-gray-9);
+          font-weight: 400;
+        }
+      }
+    }
+
+    .sheet-price {
+      position: absolute;
+      right: 32px;
+      bottom: 42px;
+      z-index: 2;
+
+      .text {
+        font-size: 24px;
+        font-weight: 400;
+        color: #a0a0a0;
+      }
+
+      .price {
+        padding-left: 12px;
+        font-size: var(--font-size-l);
+        font-weight: bold;
+        color: var(--color-red);
+      }
+    }
+  }
+}

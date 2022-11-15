@@ -1,0 +1,154 @@
+/**
+ * base 全局基础样式
+ *
+ * @USER
+ * @DATE create on
+ * @DESC  公共样式，类似于原子化
+ */
+body {
+  margin: 0;
+  font-family: $family-list !important;
+  background: var(--bgcolor-app-dark);
+}
+
+.iconfont {
+  font-size: 30px;
+
+  &::before {
+    font-size: inherit;
+  }
+}
+
+/* 图片格式去除 适配vw移动框架iphone图片丢失问题 */
+img {
+  border: none;
+  vertical-align: middle;
+  content: normal !important;
+}
+
+// 去除iphone 内阴影
+input {
+  -moz-appearance: button; /* Firefox */
+  -webkit-appearance: button; /* Safari 和 Chrome */
+  appearance: button;
+}
+
+::-webkit-input-placeholder {
+  /* Edge */
+  color: var(--color-gray-3) !important;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--color-gray-3) !important;
+}
+
+::placeholder {
+  color: var(--color-gray-3) !important;
+}
+
+/* 文本输入框删除按钮 */
+input::-ms-clear {
+  display: none;
+}
+
+/* 密码框小眼睛 */
+input::-ms-reveal {
+  display: none;
+}
+
+input[type='search'] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+  display: none;
+}
+
+.g-ignore {
+  font-style: normal;
+  color: #99a0a7;
+}
+
+.bs-flex {
+  display: flex;
+
+  &.flex-col {
+    flex-direction: column;
+  }
+
+  &.flex-center {
+    justify-content: center;
+  }
+
+  &.flex-middle {
+    align-items: center;
+  }
+
+  .flex-content {
+    justify-content: center;
+  }
+
+  .flex-content-start {
+    justify-content: flex-start;
+  }
+
+  .flex-content-end {
+    justify-content: flex-end;
+  }
+
+  .flex-items {
+    align-items: center;
+  }
+
+  .flex-items-start {
+    align-items: flex-start;
+  }
+
+  .flem-item-end {
+    align-items: flex-end;
+  }
+
+  .flex1 {
+    flex: 1;
+  }
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.bold {
+  font-weight: bold !important;
+}
+
+.truncate {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.divider-v {
+  position: relative;
+  display: inline;
+
+  &:before {
+    position: absolute;
+    content: ' ';
+    left: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 38px;
+    background: var(--color-border);
+    z-index: 2;
+  }
+}
+
+@import './transition';

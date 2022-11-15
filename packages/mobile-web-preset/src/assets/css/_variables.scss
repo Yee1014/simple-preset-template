@@ -1,0 +1,72 @@
+/**
+ * 全局样式定义
+ */
+$family-list: -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC,
+  Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei,
+  sans-serif;
+
+:root {
+  --color-black: #151617;
+  --color-black-1: #111111;
+  --color-black-2: #222222;
+  --color-black-3: #333333;
+  --color-blue: #1c7ffe;
+  --color-blue-1: #0a8eff;
+  --color-blue-2: #0a93ff;
+  --color-blue-3: #2ab1ff;
+  --color-green: #63d349;
+  --color-green-1: #1fba6a;
+  --color-orange: #ff8305;
+  --color-yellow: #ffedb5;
+  --color-white: #ffffff;
+  --color-gray: #f1f3f7;
+  --color-gray-1: #f2f3f4;
+  --color-gray-2: #d8d8d8;
+  --color-gray-3: #c4c4c9;
+  --color-gray-4: #979797;
+  --color-gray-5: #999999;
+  --color-gray-6: #9d9d9d;
+  --color-gray-7: #646464;
+  --color-gray-8: #737374;
+  --color-gray-9: #555555;
+  --color-gray-10: #5a584e;
+  --color-red: #f04646;
+  --color-red-2: #ff4131;
+  --color-purple: #5c24f0;
+  --bgcolor-app: #ffffff;
+  --bgcolor-app-dark: #f2f3f4;
+  --bgcolor-cbc: #f2f3f4;
+  --bgcolor-dialog: #ffffff;
+  --bgcolor-notify: rgba(0, 0, 0, 0.6);
+  --font-size-small: 28px;
+  --font-size: 30px;
+  --font-size-l: 32px;
+  --font-size-lg: 34px;
+  --font-size-bigger: 36px;
+  --color-border: #ebebec;
+  --list-padding-bottom: 140px;
+}
+
+@mixin text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin multi-ellipsis($line: 2) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $line;
+  overflow: hidden;
+}
+
+// 伪元素方式垂直居中
+@mixin vertical-center-container() {
+  &:after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 100%;
+    vertical-align: middle;
+  }
+}
