@@ -1,6 +1,6 @@
 {
   "name": "simple-preset-template",
-  "packageManager": "pnpm",
+  "packageManager": "pnpm@6.23.6",
   "version": "1.0.0",
   "description": "模版",
   "scripts": {
