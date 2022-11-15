@@ -1,0 +1,48 @@
+{
+  "name": "nuxt-preset",
+  "version": "1.0.0",
+  "description": "My dandy Nuxt.js project",
+  "author": "yee",
+  "private": true,
+  "scripts": {
+    "serve": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
+    "build": "cross-env NODE_MODE=prod nuxt build",
+    "build:dev": "cross-env NODE_MODE=dev nuxt build",
+    "build:beta": "cross-env NODE_MODE=beta nuxt build",
+    "build:uat": "cross-env NODE_MODE=uat nuxt build",
+    "build:prod": "cross-env NODE_MODE=prod nuxt build",
+    "start": "cross-env NODE_ENV=production node server/index.js",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/dotenv": "^1.4.0",
+    "@nuxtjs/style-resources": "^1.0.0",
+    "cross-env": "^5.2.0",
+    "dayjs": "^1.8.28",
+    "element-ui": "^2.4.11",
+    "express": "^4.16.4",
+    "lodash": "^4.17.15",
+    "nuxt": "^2.12.2"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "^2.0.0",
+    "@nuxtjs/eslint-module": "^1.0.0",
+    "@nuxtjs/router": "^1.5.0",
+    "@vue/test-utils": "^1.0.0-beta.27",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.1.0",
+    "eslint": "^6.1.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-nuxt": ">=0.4.2",
+    "eslint-plugin-prettier": "^3.1.2",
+    "jest": "^24.1.0",
+    "node-sass": "^4.14.1",
+    "nodemon": "^1.18.9",
+    "prettier": "^1.19.1",
+    "sass-loader": "^8.0.2",
+    "vue-jest": "^4.0.0-0"
+  }
+}
