@@ -1,14 +1,14 @@
 {
-  "name": "hgj-uni-preset",
+  "name": "uni-preset",
   "appid": "",
-  "description": "HGJ Uni-app 预设模版",
+  "description": "Uni-app 预设模版",
   "versionName": "1.0.0",
   "versionCode": "100",
   "transformPx": false,
   /* 5+App特有相关 */
   "app-plus": {
     "usingComponents": true,
-    "nvueStyleCompiler": "HGJ Uni-app 预设模版",
+    "nvueStyleCompiler": "Uni-app 预设模版",
     "compilerVersion": 3,
     "splashscreen": {
       "alwaysShowBeforeRender": true,
